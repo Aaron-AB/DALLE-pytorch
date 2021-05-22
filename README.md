@@ -65,14 +65,15 @@ loss = vae(images, return_loss = True)
 loss.backward()
 
 # train with a lot of data to learn a good codebook
-```
-#### Codebook Definition
-A visual codebook is a
-method that divides the space of visual descriptors into several regions. Features in one region
-correspond to the same visual code word, which is represented by an integer between 1 and
-the size of the codebook. An image is then encoded as a histogram of visual code words.
+# Codebook Definition
+# A visual codebook is a
+# method that divides the space of visual descriptors into several regions. Features in one region
+# correspond to the same visual code word, which is represented by an integer between 1 and
+# the size of the codebook. An image is then encoded as a histogram of visual code words.
 
-https://www.jmlr.org/papers/volume12/wu11b/wu11b.pdf
+# https://www.jmlr.org/papers/volume12/wu11b/wu11b.pdf
+
+```
 
 Train DALL-E with pretrained VAE from above
 
